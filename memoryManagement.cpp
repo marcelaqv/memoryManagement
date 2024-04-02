@@ -25,8 +25,8 @@ int main() {
         pageFrameTable[i] = i % NUM_FRAMES;
     }
     int logicalAddress;
-    cout << "Enter a logical address: ";
-    cin >> hex >> logicalAddress; //need to fix
+    cout << "Enter a logical address(ex: 0x5678): ";
+    cin >> hex >> logicalAddress; 
     //int logicalAddress = 0x5678;
 
     int pageNumber = logicalAddress / PAGE_SIZE;
